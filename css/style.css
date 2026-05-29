@@ -1,0 +1,48 @@
+/* Opcional: Oculta el enlace de "Saltar al contenido" hasta que se navegue con la tecla Tab (Accesibilidad) */
+.skip-link {
+  position: absolute;
+  top: -1000px;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* 2. Comentar el estilo existente para el elemento li (envuelve tus reglas así) */
+/* li {
+  display: inline;
+  padding: 10px;
+  ... (tus estilos anteriores) ...
+} 
+*/
+
+/* 3. Cambiar el elemento nav para utilizar inline-block y anchura del 80% */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* 4. Selector descendente para dar estilo sólo a la imagen en el elemento nav */
+nav img {
+  width: 10%;
+}
+
+/* 5 y 7. Estilizar la clase grid con 2 columnas (40%) y ajustar propiedades */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around; /* Separa las columnas de forma pareja */
+  align-items: center;           /* Alinea los elementos verticalmente */
+  row-gap: 20px;                 /* Da un espacio entre las filas de la rejilla */
+}
+
+/* 6. Selector descendente para las imágenes de la clase grid (ancho del 100%) */
+.grid img {
+  width: 100%;
+}
+
+/* 8. Estilizar la clase flex para utilizar flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;               /* Permite que los elementos salten a la siguiente línea si no caben */
+  justify-content: space-around; /* Espacia los elementos uniformemente */
+}
